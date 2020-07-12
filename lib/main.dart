@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.redAccent,
         title: Text('Easy Sales'),
         actions: <Widget>[
           IconButton(
@@ -45,10 +45,7 @@ class _HomePageState extends State<HomePage> {
               currentAccountPicture: GestureDetector(
                 child: CircleAvatar(
                   backgroundColor: Colors.grey,
-                  child: Icon(
-                    Icons.person,
-                    color: Colors.white,
-                  ),
+                  backgroundImage: NetworkImage('https://avatars1.githubusercontent.com/u/45739963?s=460&u=959eacb50e227e6ff5b125d9a1e92aa0856ec2a2&v=4')
                 ),
               ),
               decoration: BoxDecoration(color: Colors.redAccent),
