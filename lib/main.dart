@@ -18,7 +18,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        title: Text('Easy Sales'),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.search, color: Colors.white,), onPressed: (){}),
+          IconButton(icon: Icon(Icons.shopping_cart, color: Colors.white,), onPressed: (){}),
+        ],
+      ),
     );
   }
 }
